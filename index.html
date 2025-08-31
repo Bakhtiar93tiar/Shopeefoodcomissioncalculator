@@ -3,216 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO -->
-  <title>Kalkulator Komisen ShopeeFood Malaysia 2025 | Commission Calculator</title>
-  <meta name="description" content="Kalkulator komisen ShopeeFood Malaysia untuk kira komisen 30% dan VAT secara automatik. ShopeeFood commission calculator with VAT breakdown.">
-  <meta name="keywords" content="ShopeeFood, kalkulator komisen, ShopeeFood Malaysia, VAT, ShopeeFood commission calculator">
+  <title>Kalkulator Komisen ShopeeFood</title>
+  <meta name="description" content="Kalkulator Komisen ShopeeFood Malaysia untuk kira komisen & VAT dengan mudah. Tukar bahasa antara English & Melayu.">
+  <meta name="keywords" content="ShopeeFood, kalkulator komisen, ShopeeFood commission calculator, VAT Malaysia, food delivery">
   <meta name="author" content="">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Kalkulator Komisen ShopeeFood Malaysia 2025">
-  <meta property="og:description" content="Kalkulator mudah untuk kira komisen ShopeeFood & VAT di Malaysia. ShopeeFood commission calculator with automatic breakdown.">
+  <!-- Open Graph SEO -->
+  <meta property="og:title" content="Kalkulator Komisen ShopeeFood">
+  <meta property="og:description" content="Kalkulator mudah untuk kira komisen ShopeeFood & VAT. Sokong BM & English.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://username.github.io/reponame/">
-  <meta property="og:image" content="logo-placeholder.png">
-  <meta name="google-site-verification" content="ZxTkUpU9MxkuJotvxxbPvxtyJe27Y01Z44Qp2VfJVAI" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="logo.png">
 
+  <!-- Style -->
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #f4f6f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
       margin: 0;
+      padding: 0;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       flex-direction: column;
+      align-items: center;
     }
-    .card {
+    .container {
       background: #fff;
-      padding: 2rem;
+      margin: 40px auto;
+      padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 360px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 500px;
+      width: 100%;
       text-align: center;
     }
-    .logo {
-      max-width: 120px;
-      margin-bottom: 1rem;
+    img.logo {
+      width: 100px;
+      margin-bottom: 10px;
     }
-    h2 {
-      margin-bottom: 0.3rem;
+    h1 {
+      margin-bottom: 5px;
     }
     .subtitle {
-      font-size: 0.9rem;
+      font-size: 14px;
       color: #666;
-      margin-bottom: 1.5rem;
+      margin-bottom: 20px;
     }
-    select {
-      margin-bottom: 1rem;
-      padding: 8px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      font-size: 0.9rem;
-      width: 100%;
-    }
-    input {
+    input, button, select {
       padding: 10px;
+      margin: 10px 0;
       width: 100%;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
     }
     button {
-      background: #f97316;
+      background: #ff5722;
       color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
-      width: 100%;
+      border: none;
     }
     button:hover {
-      background: #ea580c;
+      background: #e64a19;
     }
     .result {
+      margin-top: 20px;
+      padding: 15px;
+      background: #fafafa;
+      border-radius: 8px;
       text-align: left;
-      margin-top: 1.5rem;
-      background: #f9fafb;
-      padding: 1rem;
-      border-radius: 8px;
-      font-size: 0.95rem;
     }
-    #ads {
-      margin-top: 1.5rem;
-      padding: 1rem;
-      background: #f1f5f9;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      color: #555;
+    .ads {
+      margin: 20px 0;
     }
-    footer {
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #555;
-      text-align: center;
+    .contact {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .lang-switch {
+      margin-bottom: 15px;
+      text-align: right;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <!-- Language Switch -->
+    <div class="lang-switch">
+      <select id="language">
+        <option value="ms">Bahasa Melayu</option>
+        <option value="en">English</option>
+      </select>
+    </div>
 
-  <div class="card">
-    <!-- Ganti link bawah ni dengan gambar logo ShopeeFood -->
-    <img src="https://static.wikia.nocookie.net/logopedia/images/3/30/Shopee_Food.svg/revision/latest?cb=20240517030259" alt="Logo ShopeeFood" class="logo">  
+    <!-- Logo -->
+    <img src="https://png.pngtree.com/png-clipart/20221224/original/pngtree-shopefood-logo-png-image_8801636.png" alt="ShopeeFood Logo" class="logo">
 
-    <h2 id="title">Kalkulator Komisen</h2>
-    <p id="subtitle" class="subtitle">Kira potongan komisen & VAT ShopeeFood Malaysia secara automatik</p>
+    <!-- Title -->
+    <h1 id="title">Kalkulator Komisen ShopeeFood</h1>
+    <p class="subtitle" id="subtitle">Kalkulator ini membantu anda kira komisen dan Cukai VAT untuk ShopeeFood dengan mudah.</p>
 
-    <!-- Pilihan Bahasa -->
-    <select id="lang" onchange="setLanguage(this.value)">
-      <option value="ms">Bahasa Melayu</option>
-      <option value="en">English</option>
-    </select>
+    <!-- Input -->
+    <input type="number" id="price" placeholder="Masukkan harga (RM)">
+    <button onclick="calculate()" id="calcBtn">Kira Komisen</button>
 
-    <input type="number" id="harga" placeholder="Masukkan harga jual (RM)">
-    <button id="calcBtn" onclick="kira()">Kira</button>
+    <!-- Result -->
+    <div class="result" id="result"></div>
 
-    <div id="output" class="result" style="display:none;"></div>
-
-    <!-- Ganti bahagian ni dengan kod iklan -->
-    <div id="ads">
+    <!-- Ads Section -->
+    <div class="ads">
+      <!-- Letak iklan sini -->
       <script type="text/javascript">
-	atOptions = {
-		'key' : 'af8850fbc252a4cf6360f908c148700d',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/af8850fbc252a4cf6360f908c148700d/invoke.js"></script>
+        atOptions = {
+          'key' : 'af8850fbc252a4cf6360f908c148700d',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/af8850fbc252a4cf6360f908c148700d/invoke.js"></script>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+      Hubungi saya: <br>
+      Email: <a href="mailto:youremail@example.com">youremail@example.com</a> <br>
+      Instagram: <a href="https://instagram.com/yourprofile" target="_blank">@yourprofile</a> Tiktok: <a href="https://instagram.com/yourprofile" target="_blank">@Asukikun99</a> Threads: <a href="https://www.threads.com/@asukikun99" target="_blank">@Asukikun99</a> <br>
+      Anda boleh self-host menggunakan sumber terbuka kami. Tarikh kemaskini 31/8/2025 <br>
     </div>
   </div>
 
-  <footer>
-    <p id="contactLabel">Hubungi saya:</p>
-    <p>Email: <a href="mailto:youremail@email.com">youremail@email.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/username" target="_blank">@username</a></p>
-  </footer>
-
+  <!-- Script -->
   <script>
-    // ==== SETTING BOLEH UBAH SINI ====
-    const KOMISEN_PERCENT = 30; // <-- Ubah sini untuk kadar komisen (%)
-    const VAT_PERCENT = 8;      // <-- Ubah sini untuk VAT (%)
-    // ================================
+    // Setting default commission & VAT
+    let commissionRate = 0.30; // Tukar sini kalau ShopeeFood ubah %
+    let vatRate = 0.06; // VAT Malaysia (6%)
 
     const translations = {
       ms: {
-        title: "Kalkulator Komisen",
-        subtitle: "Kira potongan komisen & VAT ShopeeFood Malaysia secara automatik",
-        placeholder: "Masukkan harga jual (RM)",
-        button: "Kira",
-        harga: "Harga jual",
-        komisen: "Komisen",
-        vat: "VAT",
-        jumlah: "Jumlah diterima",
+        title: "Kalkulator Komisen ShopeeFood",
+        subtitle: "Kalkulator ini membantu anda kira komisen dan VAT ShopeeFood dengan mudah.",
+        placeholder: "Masukkan harga (RM)",
+        button: "Kira Komisen",
+        resultLabel: (price, commission, vat, total) => `
+          Harga asal: RM${price.toFixed(2)}<br>
+          Komisen ShopeeFood (${commissionRate*100}%): RM${commission.toFixed(2)}<br>
+          Cukai VAT (${vatRate*100}% dari komisen): RM${vat.toFixed(2)}<br>
+          Jumlah potongan: RM${(commission + vat).toFixed(2)}<br>
+          <b>Pendapatan Bersih: RM${total.toFixed(2)}</b>
+        `,
         contact: "Hubungi saya:"
       },
       en: {
         title: "ShopeeFood Commission Calculator",
-        subtitle: "Calculate ShopeeFood commission & VAT in Malaysia automatically",
-        placeholder: "Enter selling price (RM)",
-        button: "Calculate",
-        harga: "Selling Price",
-        komisen: "Commission",
-        vat: "VAT",
-        jumlah: "Net Amount Received",
+        subtitle: "This calculator helps you calculate ShopeeFood commission and VAT easily.",
+        placeholder: "Enter price (RM)",
+        button: "Calculate Commission",
+        resultLabel: (price, commission, vat, total) => `
+          Original Price: RM${price.toFixed(2)}<br>
+          ShopeeFood Commission (${commissionRate*100}%): RM${commission.toFixed(2)}<br>
+          VAT (${vatRate*100}% of commission): RM${vat.toFixed(2)}<br>
+          Total Deductions: RM${(commission + vat).toFixed(2)}<br>
+          <b>Net Income: RM${total.toFixed(2)}</b>
+        `,
         contact: "Contact me:"
       }
     };
 
-    let currentLang = "ms";
-
-    function setLanguage(lang) {
-      currentLang = lang;
-      const t = translations[lang];
-
-      document.getElementById("title").innerText = t.title;
-      document.getElementById("subtitle").innerText = t.subtitle;
-      document.getElementById("harga").placeholder = t.placeholder;
-      document.getElementById("calcBtn").innerText = t.button;
-      document.getElementById("contactLabel").innerText = t.contact;
-      document.getElementById("output").style.display = "none"; // hide result on lang change
-    }
-
-    function kira() {
-      const harga = parseFloat(document.getElementById("harga").value);
-      if (isNaN(harga) || harga <= 0) {
-        alert(currentLang === "ms" ? "Sila masukkan harga yang sah." : "Please enter a valid price.");
+    function calculate() {
+      let price = parseFloat(document.getElementById("price").value);
+      if (isNaN(price) || price <= 0) {
+        document.getElementById("result").innerHTML = "Sila masukkan harga yang sah.";
         return;
       }
+      let commission = price * commissionRate;
+      let vat = commission * vatRate;
+      let total = price - (commission + vat);
 
-      const komisen = (KOMISEN_PERCENT / 100) * harga;
-      const vat = (VAT_PERCENT / 100) * komisen;
-      const jumlahDiterima = harga - komisen - vat;
-
-      const t = translations[currentLang];
-      const outputDiv = document.getElementById("output");
-      outputDiv.style.display = "block";
-      outputDiv.innerHTML = `
-        ${t.harga}: RM${harga.toFixed(2)} <br>
-        ${t.komisen} (${KOMISEN_PERCENT}%): RM${komisen.toFixed(2)} <br>
-        ${t.vat} (${VAT_PERCENT}% ${currentLang==="ms"?"daripada komisen":"of commission"}): RM${vat.toFixed(2)} <br>
-        <strong>${t.jumlah}: RM${jumlahDiterima.toFixed(2)}</strong>
-      `;
+      let lang = document.getElementById("language").value;
+      document.getElementById("result").innerHTML = translations[lang].resultLabel(price, commission, vat, total);
     }
+
+    // Language switcher
+    document.getElementById("language").addEventListener("change", function() {
+      let lang = this.value;
+      document.getElementById("title").innerText = translations[lang].title;
+      document.getElementById("subtitle").innerText = translations[lang].subtitle;
+      document.getElementById("price").placeholder = translations[lang].placeholder;
+      document.getElementById("calcBtn").innerText = translations[lang].button;
+      document.getElementById("contact").childNodes[0].textContent = translations[lang].contact + " ";
+    });
   </script>
 </body>
 </html>
-
-
